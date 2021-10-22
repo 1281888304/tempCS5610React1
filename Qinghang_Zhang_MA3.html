@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS5610MA3</title>
+<style>
+    h1{
+        text-align: center;
+    }
+   .fullScreen{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;
+        background: white; 
+   }
+   .grid-container{
+       display: grid;
+       grid-template-columns: 1fr 4fr 1fr;
+       grid-template-rows: 1fr 4fr 1fr;
+       grid-column-gap: 5px;
+       grid-row-gap: 5px;
+       
+   }
+   .header{
+       grid-row: 1/1;
+       grid-column: 1/4;
+       background-color: pink;
+   }
+   .leftBar{
+    grid-row: 2/3;
+       grid-column: 1/1;
+       background-color: pink;
+   }
+   .middleBar{
+       grid-row:2/3;
+       grid-column: 2/3;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: pink;
+   }
+   .rightBar{
+       grid-row:2/3;
+       grid-column: 3/4;
+       background-color: pink;
+   }
+   .footer{
+       grid-row: 3/4;
+       grid-column: 1/4;
+       background-color: pink;
+   }
+   .list{
+       margin-top: 20px;
+       padding-left: 20px;
+   }
+   .box{
+       
+        /* margin-left: auto; 
+        margin-right: auto;  */
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:60px;
+        width: 60px;
+        background-color: purple;
+   }
+   .box:hover{
+        transition: 0.5s;
+        background-color: blue;
+        height:120px;
+        width: 120px;
+
+   }
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container fullScreen">
+    <header class="header">
+        <h1>Qinghang's Website</h1>
+    </header>
+    <div class="leftBar">
+        <div class="list">
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Select Projects</a></li>
+        </div>
+        
+
+    </div>
+    <div class="middleBar">
+        <div class="box"></div>
+    </div>
+    <div class="rightBar">
+
+
+    </div>
+    <div class="footer">
+
+    </div>
+    
+    
+</div>
+
+
+
+</body>
+</html>
